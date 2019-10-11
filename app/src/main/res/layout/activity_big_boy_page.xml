@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mDrawer"
+    android:background="@drawable/mainactivity_background"
+    tools:context=".BigBoyPageTabs.BigBoyPage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_weight=".90"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:theme="@style/AppTheme.PopupOverlay"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/search"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="@string/searchpossibleplates"
+                        android:textColor="#d9d9d9"
+                        android:onClick="searchClicked"
+                        android:id="@+id/searcher"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:paddingRight="20dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="20dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:padding="8dp"
+                            android:onClick="exitsearchClicked"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:id="@+id/magni"
+                            android:src="@mipmap/magnifying_glass"/>
+                        <EditText
+                            android:gravity="center_vertical|right"
+                            android:ellipsize="end"
+                            android:paddingLeft="10dp"
+                            android:hint="@string/searchpossibleplates"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:textColor="#FFF"
+                            android:id="@+id/searchinput"
+                            android:focusableInTouchMode="true"
+                            android:keepScreenOn="true"
+                            android:visibility="invisible"
+                            android:textSize="14sp"
+                            android:paddingRight="20dp"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="20dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_weight=".10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_weight=".99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Fridge Page -->
+                <FrameLayout
+                    android:visibility="invisible"
+                    android:id="@+id/sample_content_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <!-- Possible Plates -->
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/PossiblePlatesPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvContactsplateTypes2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvContactsPossiblePlates"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/add_ingredients2"
+                        android:layout_width="315dp"
+                        android:layout_height="75dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/add_ingredients2"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+                <android.support.v4.widget.NestedScrollView
+                    android:visibility="invisible"
+                    android:id="@+id/allplatesPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!-- All Plates -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        tools:context="tiab.is.hard.BigBoyPageTabs.AllPlatesTab">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvContactsplateTypes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvContactsAllPlates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight=".01"
+                android:layout_height="54dip">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dip"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/whatcanicook"
+                        android:gravity="center"
+                        android:focusable="true"
+                        android:background="@color/selected_tab"
+                        android:onClick="whatcanicookClicked"
+                        android:id="@+id/whatcanicook"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/selected_text_color"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:background="@color/unselected_tab"
+                        android:text="@string/allplates"
+                        android:onClick="allplatesClicked"
+                        android:id="@+id/allplates"
+                        android:textColor="@color/unselected_text_color"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:background="@color/unselected_tab"
+                        android:textColor="@color/unselected_text_color"
+                        android:text="@string/fridge"
+                        android:id="@+id/fridge"
+                        android:gravity="center"
+                        android:onClick="fridgeClicked"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/save_ingredients"
+                    android:layout_width="match_parent"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent"
+                    android:background="@color/unselected_tab"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/save_ingredients"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#CC737373"
+        android:id="@+id/loading_background"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/loading_screen"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:background="@drawable/uni_background_baby"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/confirmlogout"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_marginRight="55dp"
+                    android:text="@string/no"
+                    android:textColor="#FFF"
+                    android:id="@+id/no"
+                    android:textSize="18sp"
+                    android:background="@color/unselected_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="@string/yes"
+                    android:id="@+id/yes"
+                    android:textSize="18sp"
+                    android:background="#FFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--android:layout_gravity="start"-->
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/side_menu_top_part"
+        android:layout_width="wrap_content"
+        android:background="@color/selected_tab"
+        app:itemTextColor="#FFF"
+        android:id="@+id/navigation"
+        app:itemIconTint="#FFF"
+        android:layout_gravity="start"
+        app:menu="@menu/side_menu"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight=".3"/>
+            <TextView
+                android:layout_weight=".7"
+                android:id="@+id/footer_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="#FFF"
+                android:gravity="center"/>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

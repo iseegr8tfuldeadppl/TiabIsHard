@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#82001c</color>
+    <color name="darker">#2222</color>
+    <color name="colorPrimaryDark">#b6ab96</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="actionBarBackgroundColor">#c0b7a5</color>
+    <color name="black">#610315</color>
+
+    <color name="selected_text_color">#f2f2f2</color>
+    <color name="unselected_text_color">#bfbfbf</color>
+    <color name="selectedtype">#ff0000</color>
+
+    <color name="selected_tab">#610315</color>
+    <color name="unselected_tab">#82001c</color>
+    <color name="hovered_tab">#b30027</color>
+</resources>

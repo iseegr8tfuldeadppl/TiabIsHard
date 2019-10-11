@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainactivity_background"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/logo" />
+                <ProgressBar
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progress"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="26dp"/>
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                android:background="@drawable/round_bg"
+                android:layout_marginStart="26dp"
+                app:elevation="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="26dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000"
+                android:drawableEnd="@drawable/ic_google_logo"
+                android:text="@string/login_with_google"
+                android:drawableRight="@drawable/ic_google_logo"
+                android:paddingRight="10dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="26dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dontlogin"
+                android:onClick="dontloginClicked"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:background="@drawable/round_bg"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="26dp"
+                app:elevation="10dp"
+                android:text="@string/dont_login"
+                android:layout_marginLeft="26dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nevershowagain"
+                android:background="@drawable/round_bg"
+                android:layout_marginStart="26dp"
+                android:onClick="nevershowagainClicked"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:layout_marginEnd="26dp"
+                android:textSize="17sp"
+                app:elevation="10dp"
+                android:text="@string/never_ask_again"
+                android:layout_marginLeft="26dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

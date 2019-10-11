@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1071706393879",
+    "firebase_url": "https://scuffedbots-tiab.firebaseio.com",
+    "project_id": "scuffedbots-tiab",
+    "storage_bucket": "scuffedbots-tiab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071706393879:android:22840157d56e788a",
+        "android_client_info": {
+          "package_name": "tiab.is.hard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071706393879-00e9i6igq09v2c99223aovmmorueflej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tiab.is.hard",
+            "certificate_hash": "2da74d0d9ad4d41a5b8a3895574faf2efe785eec"
+          }
+        },
+        {
+          "client_id": "1071706393879-krsnu84bo11tvogrs6qiaku6t8o51nmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDul9rfrhQ6NxxLH45Vr-9rdYl3K8EVO-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071706393879-krsnu84bo11tvogrs6qiaku6t8o51nmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

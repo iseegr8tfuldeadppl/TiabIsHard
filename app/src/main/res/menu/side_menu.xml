@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/backup"
+        android:icon="@mipmap/backup"
+        android:title="@string/backup"/>
+    <item
+        android:icon="@mipmap/restore"
+        android:id="@+id/restore"
+        android:title="@string/restore"/>
+    <item
+        android:id="@+id/invite"
+        android:icon="@mipmap/invite"
+        android:title="@string/invitefriends"/>
+    <item
+        android:id="@+id/more"
+        android:icon="@mipmap/app"
+        android:title="@string/more"/>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@mipmap/logout"
+        android:title="@string/logout"/>
+</menu>

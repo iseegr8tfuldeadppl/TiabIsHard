@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainactivity_background"
+    tools:context=".PlatePage.PlatePage">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <tiab.is.hard.Round.RoundedImageView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            app:riv_border_width="0dip"
+            app:riv_oval="false"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="1dp"
+            android:textColor="#FFF"
+            android:background="#7f000000"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:onClick="shareClicked"
+        app:elevation="15dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shareplate"
+        android:textColor="@color/selected_text_color"
+        android:text="@string/shareplate"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="23dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:text="@string/ingredientsgud"
+            android:layout_gravity="end"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/selected_tab" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/IngredientList"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/selected_tab"
+            android:text="@string/stepstitle"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/StepsList"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textColor="@color/selected_tab"
+            android:layout_gravity="end"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/videosgud"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/netandytappneededforvids"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/VideosList"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

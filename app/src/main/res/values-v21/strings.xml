@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">وش نقدر نطيب</string>
+    <string name="add_ingredients">إضافة مكوّنات</string>
+    <string name="hifded">تمّ الحِفظ</string>
+    <string name="plsgifinternet">يُرجى الإتصال بالإنترنت لتحميل الأطْباق</string>
+    <string name="pls_net">يُرجى الإتِّصالُ بالإنترنت</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="welcome">مرحباً</string>
+    <string name="whatcanicook">وش نقدر نطيّب</string>
+    <string name="allplates">جميع الأطباق</string>
+    <string name="invitepitch">تطبيق يُريك أطباقاً منزلية يُمكِنُك طبخُها وِفق ما يُوجد في ثلاجتِك!</string>
+    <string name="invitelink">play.google.com/store/apps/details?id=tiab.is.hard</string>
+    <string name="fridge">ثلاّجتي</string>
+    <string name="shareplate">شارك الوصفة</string>
+    <string name="calories"> السعيرات : </string>
+    <string name="cooking_time"> الوقت : </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noselectedingredientsinaccount">لا يوجد أي مكوِّنات مُختارة في هذا الحِساب</string>
+    <string name="savechangesfirst">إظغطْ على حِفظ التغييرات أولاً</string>
+    <string name="saved">تمَّ الحِفْظ</string>
+    <string name="loaded">تمَّ التَّحميل</string>
+    <string name="loginfirstpls">يُرجى ربط حِساب أولاً</string>
+    <string name="loggedout">تمَّ تسجيل الخروج</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="invitefriends">دعوة الأصدقاء</string>
+    <string name="backup">حِفض المعلومات في الحِساب</string>
+    <string name="restore">حمِّل المعلومات من الحِساب</string>
+    <string name="more">حَمِّل تطبيقاتنا الأخرى!</string>
+    <string name="search">بحث</string>
+    <string name="save_ingredients">حِفظ التغييرات</string>
+    <string name="add_ingredients2">أضِف مكوّنات لِلثلّاجة للحصول على قائمة لأطباق بإمكانُك طبخُها</string>
+    <string name="preparing_plates">تجهيز الأطباق…</string>
+    <string name="net_needed_pls">(للمرَّة الأولى فقط الإنترنت ضروري من أجل التحميل)</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
+    <string name="videos">Videos</string>
+    <string name="searchallplates">بحث عن طبقْ</string>
+    <string name="searchingredients">بحث عن مكوِّن</string>
+    <string name="login_with_google">تسجيل الدخول بحساب غوغل</string>
+    <string name="dont_login">لا تسجِّل الدخول بحساب</string>
+    <string name="never_ask_again">لا تُظهِرْ هذه الصفحة مُجدّدًا</string>
+    <string name="share">شارك الوصفة</string>
+    <string name="searchpossibleplates">بحث فواش نقدر نطيب</string>
+    <string name="yourenotloggedin">لست مُتَّصِل بحِساب!</string>
+    <string name="no">لا</string>
+    <string name="yes">أجل</string>
+    <string name="confirmlogout">تأْكيد تسجيل الخروج</string>
+    <string name="stepstitle">طريقة التحضير</string>
+    <string name="videosgud">فيديو</string>
+    <string name="ingredientsgud">المكوِّنات</string>
+    <string name="netandytappneededforvids">(تطبيق اليوتوب و الإنترنت ضروريّان للمشاهدة)</string>
+
+    <string name="divider"> · </string>
+
+    <string name="vegetables">خضر</string>
+    <string name="miscellaneous">إضافيات</string>
+    <string name="canned">معلبات</string>
+    <string name="spices">توابل</string>
+    <string name="fruits">فواكه</string>
+    <string name="dairy">ألبان</string>
+    <!-- TODO: Ingredient Types - String Resource Variables -->
+
+</resources>
